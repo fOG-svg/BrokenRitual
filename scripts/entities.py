@@ -34,7 +34,7 @@ class Item:
         surface.blit(self.animation.shot(), (self.pos[0] - offset[0], self.pos[1] - offset[1]))
 
     def collide_check(self, object):
-        return self.rect().collidepoint(object.pos[0], object.pos[1])
+        return self.rect().colliderect(object.rect())
 
 
 class PhysicsEntity:

@@ -518,9 +518,7 @@ class Game:
         elif self.choose == 3:
             self.player = Ninja(self, (self.display.get_width() / 2, self.display.get_height() / 2),
                                 (25, 25), self.choose)
-        # self.load_level(self.level)
-        self.level = 'desert2'
-        self.load_level('desert2')
+        self.load_level(self.level)
         while self.running:
             self.game_state = 'game'
             self.display.fill((0, 0, 0, 0))
