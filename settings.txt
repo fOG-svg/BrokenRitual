@@ -1,0 +1,3 @@
+music 2
+ambience 2
+sounds 1
